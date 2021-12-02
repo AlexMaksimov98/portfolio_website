@@ -1,0 +1,40 @@
+{% include 'header.html' %}
+
+{% block title %}
+<title>About me</title>
+{% endblock %}
+
+{% block content %}
+<h1 class="title">Hey there!</h1>
+<div class="content">
+    <div class="about col-sm-4">
+        <h1 class="subtitle">My story</h1>
+        <p>Hi, my name is Alex. I graduated from law academy and I have been working as a Russian and English
+            teacher.
+            It has given me lots of experience of communication with students from all over the world. When I have
+            some
+            spare time, I have been developing my passion with Python.
+        </p>
+    </div>
+    <div class="skills col-sm-4">
+        <h1 class="subtitle">My skills</h1>
+        {% for item in skills %}
+            <p class="skill">{{ item.skill }}</p>
+        {% endfor %}
+    </div>
+    <div class="education col-sm-4">
+        <h1 class="subtitle">My education</h1>
+        {% for item in degrees %}
+            {% if item.organization == None or item.period == None: %}
+                <p class='degree'>{{ item.id }}. {{ item.degree }}</p>
+            {% else: %}
+                <p class="degree">{{item.id}}. {{ item.degree }}</p>
+                <p class="degree">{{ item.organization }}</p> 
+                <p class="degree">{{ item.period}}</p> 
+            {% endif %}
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}
+
+{% include 'footer.html' %}

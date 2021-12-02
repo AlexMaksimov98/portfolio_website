@@ -1,0 +1,25 @@
+{% include 'header.html' %} 
+
+{% block title %}
+<title>Home</title>
+{% endblock %} 
+
+{% block content %}
+<div class="homepage">
+    <div class="row" style="margin-right: 0;">
+        <div class="col-sm-6 ">
+            <h1>Hi</h1>
+            <h1>I am Aleksandr</h1>
+            <h1>Python Developer</h1>
+            <div class="contact-button">
+                <a class="btn btn-dark btn-lg" href="{{ url_for('contact') }} " role="button">Contact me</a>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <img src="static/PoxEz83Wvd8.png" alt="Photo of Alex" class="photo">
+        </div>
+    </div>
+</div>
+{% endblock %} 
+
+{% include 'footer.html' %}

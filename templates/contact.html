@@ -1,0 +1,19 @@
+{% include 'header.html' %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block title %}
+<title>Contact me</title>
+{% endblock %}
+
+{% block content %}
+<div class="title">
+    <h4>Do you want to contact me?</h4> 
+    <h4>Fill in the details and I will contact you as soon as possible!</h4>
+</div>
+<div class="contact-form">
+    {{ ckeditor.load() }}
+    {{ wtf.quick_form(form, button_map={'submit':'dark'}, extra_classes='contact-form') }}
+</div>
+{% endblock %}
+
+{% include 'footer.html' %}

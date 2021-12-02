@@ -1,0 +1,176 @@
+/* Header section */
+
+nav {
+    padding: 0 10% 0 10%;
+}
+
+/* Title is used at all pages */
+
+.title {
+    text-align: center;
+    padding: 3% 15% 0 15%;
+    margin: 0 10% 0 10%;
+}
+
+/* Index Page */
+
+.homepage {
+    flex-direction: row;
+    margin: 8% 0 0 10%;
+}
+
+.contact-button {
+    margin: 3% 0 0 15%;
+}
+
+/* About Page */
+
+.content {
+    display: flex;
+    flex-direction: row;
+    margin: 5% 14% 5% 8%;
+    gap: 4%;
+}
+
+.about, .skills, .education {
+    font-size: 1.4em;
+    text-align: center;
+}
+
+.skill,.degree {
+    margin-bottom: 0;
+}
+
+/* Projects Page */
+
+.project {
+    margin: 5% 15%;
+    font-size: 26px;
+}
+
+/* Contact Page */
+
+.contact-form {
+    padding: 1% 10% 2% 10%;
+}
+
+.form-group {
+    padding-bottom: 1%;
+    font-weight: bold;
+}
+
+#submit {
+    margin-top: 1.5%;
+}
+
+/* Success Page */
+
+.success {
+    margin: 10% 10% 15% 10%;
+    text-align: center;
+}
+
+/* Footer code */
+
+footer {
+    padding: 3% 0 3% 0;
+    background-color: black;
+    color: white;
+    text-align: center;
+    line-height: normal;
+}
+
+.icons {
+    margin-bottom: 2%;
+}
+
+.icon {
+    margin: 3% 2% 2% 2%;
+}
+
+a.icon:visited, a.icon:active {
+    color: white;
+    text-decoration: none;
+}
+
+a.facebook-icon:hover {
+    color: #4267B2;
+}
+
+a.twitter-icon:hover {
+    color: #1DA1F2;
+}
+
+a.instagram-icon:hover {
+    color: #833AB4;
+}
+
+/* Section for Mobile devices */
+
+@media screen and (max-width: 480px) {
+
+    /* Title is used for all pages */
+
+    .title {
+        text-align: center;
+        padding: 3% 0 0 0;
+    }
+
+    /* Index Page */
+
+    .homepage {
+        text-align: center;
+        margin: 5% 0 0 0;
+    }
+
+    .contact-button {
+        margin: 0;
+    }
+
+    .photo {
+        width: 90%;
+        padding-left: 5%;
+    }
+
+    /* About Page */
+
+    .content {
+        flex-direction: column;
+        font-size: 14px;
+        margin-left: 15%;
+    }
+
+    .subtitle {
+        text-align: center;
+        font-size: 25px;
+        font: bold;
+    }
+
+    .skills {
+        margin-bottom: 5%;
+    }
+
+    /* Projects Page */
+
+    .project {
+        font-size: 16px;
+        margin: 4% 11%;
+    }
+
+    /* Success Page */
+
+    .success {
+        margin: 30% 10% 30% 10%;
+        text-align: center;
+    }
+
+    /* Footer */
+
+    footer {
+        font-size: 14px;
+    }
+
+    .icons {
+        margin: 2% 2%;
+    }
+}
