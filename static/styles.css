@@ -43,9 +43,15 @@ nav {
 
 /* Projects Page */
 
-.project {
+.projects {
     margin: 5% 15%;
-    font-size: 26px;
+    font-size: 22px;
+}
+
+.project {
+    padding: 3%;
+    border: dashed black;
+    margin-top: 2%;
 }
 
 /* Contact Page */
