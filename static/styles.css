@@ -92,11 +92,11 @@ footer {
 
 .icon {
     margin: 3% 2% 2% 2%;
+    text-decoration: none;
 }
 
 a.icon:visited, a.icon:active {
     color: white;
-    text-decoration: none;
 }
 
 a.facebook-icon:hover {
@@ -178,5 +178,9 @@ a.instagram-icon:hover {
 
     .icons {
         margin: 2% 2%;
+    }
+
+    .icon {
+        text-decoration: none;
     }
 }
