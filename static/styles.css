@@ -92,10 +92,6 @@ footer {
 
 .icon {
     margin: 3% 2% 2% 2%;
-    text-decoration: none;
-}
-
-a.icon:visited, a.icon:active {
     color: white;
 }
 
@@ -168,6 +164,7 @@ a.instagram-icon:hover {
     .success {
         margin: 30% 10% 30% 10%;
         text-align: center;
+        width: auto;
     }
 
     /* Footer */
@@ -181,6 +178,6 @@ a.instagram-icon:hover {
     }
 
     .icon {
-        text-decoration: none;
+        color: white;
     }
 }
